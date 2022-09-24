@@ -2,6 +2,8 @@
 
 import {
 
+    CREATE_USER,
+    EDIT_USER,
     GET_ALL_USERS,
 } from "./actionType";
 
@@ -15,6 +17,10 @@ export default function (state = initialState, action) {
 
 
         case GET_ALL_USERS:
+            return { ...state, user: action.payload }
+        case CREATE_USER:
+            return { ...state, user: action.payload }
+        case EDIT_USER:
             return { ...state, user: action.payload }
         default:
             return state;

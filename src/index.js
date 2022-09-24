@@ -4,7 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Route, Switch, withRouter } from "react-router";
 import Root from "./Root";
 import { BrowserRouter } from "react-router-dom";
-import Login from "./components/Login";
+import AllUsers from "./components/AllUsers";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -18,7 +18,7 @@ root.render(
     <BrowserRouter>
       <Route component={ScrollToTop} />
       <Switch>
-        <Route exact path="/" component={withRouter(Login)} />
+        <Route exact path="/" component={withRouter(AllUsers)} />
       </Switch>
     </BrowserRouter>
   </Root>
